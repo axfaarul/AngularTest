@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="sismiop">
+
+<head>
+<title>Angular Test | 4</title>
+<script src="../angular.min.js"></script>
+<script src="../angular-cookies.js"></script>
+<script src="../jquery.js"></script>
+<script src="soal_4.js"></script>
+</head>
+
+<body>
+  <div ng-controller="soal_4">
+      <input type="text" ng-value="inputStatis"/>
+      <h1>{{inputStatis}}</h1>
+      <select ng-model="inputSelect">
+      	<option ng-repeat="key in dataKaryawanKeys" ng-value="key">{{namaKaryawan[key]}}</option>
+      </select>
+  </div>
+</body>
+
+</html>

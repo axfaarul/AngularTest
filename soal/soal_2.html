@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="sismiop">
+
+<head>
+    <title>Angular Test | 2</title>
+    <script src="angular.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="soal_2.js"></script>
+</head>
+
+<div ng-controller="soal_2">
+        <label>Input :</label>
+        <input type="Number" ng-model="nomor" placeholder="Berapa rupiah?">
+        <h3> {{ nomor | currency:"IDR ":2}}</h3>
+        <hr>
+    </div>
+
+</html>
